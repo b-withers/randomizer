@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 
-.footer {
-	text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
-}
-
 .jumbotron{
 	font-family: 'Permanent Marker', cursive;
 	background-image: url(../images/dice.gif);
 	background-repeat: no-repeat;
 	background-color: white;
 	background-size: 12%;
+	padding: 20px;
 }
 
 .text{
