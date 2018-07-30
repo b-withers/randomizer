@@ -2,19 +2,29 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		
-		<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- Link to favicon -->
+	<link rel="shortcut icon" href="./assets/images/favicon.ico" />
 
-    <title>Randomizer!</title>
-  </head>
+	<!--apple iPhone screen logos-->
+<link rel="apple-touch-icon" sizes="57x57" href="./assets/images/icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/images/icon.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/images/icon.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/images/icon.png" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Link to external stylesheet		 -->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<title>Randomizer!</title>
+	</head>
+	
 <html>
 <body>
-
+	<!-- jumbotron with title and information about what app does -->
 		<div class="jumbotron jumbotron-fluid text-center">
 				<div class="container">
 					<h1 class="display-5">RANDOMIZER!</h1>
@@ -23,29 +33,33 @@
 			</div>
 
 <div class="container text-center col-sm-6">
+	<!-- hidden until randomize function is called -->
 	<h1 id="text2" class="text2">RANDOMIZED!</h1>
+	<!-- area where random items are displayed -->
 		<h2 class="text">random list 1</h2><p class="text1" id="studentsOne"></p>
 		<h2 class="text">random list 2</h2><p class="text1" id="studentsTwo"></p>
+		<!-- button to run randomize function -->
 			<button class="text btn btn-outline-dark btn-lg" onclick="randominze()">RANDOMIZE</button>
 </div>
 
-
 <br>
-
+<!-- input and button for adding to array -->
 <div class="text container-fluid col-sm-4 input-group mb-3">
 		<input type="text3" id="inputtext" class="lead form-control" placeholder="To Be Randomized (one at a time)" aria-label="Add to List" aria-describedby="button-addon2">
-		<div class="input-group-append">
-			<button class="text btn btn-outline-secondary" type="button" id="add button-addon2" onclick="addRecord()">add</button>
+			<div class="input-group-append">
+				<button class="text btn btn-outline-secondary" type="button" id="add button-addon2" onclick="addRecord()">add</button>
 		</div>
-		</div>
+</div>
+<!-- div where items to the array are displayed -->
 	<div class="container">
 		<div class="text1 container col-sm-6 text" id='values'></div>
 	</div>
 
-
+<!-- script tags for bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- link to extenral JavaScript sheet -->
 <script src="./assets/javascript/script.js"></script>
 
 </body>
