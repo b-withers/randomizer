@@ -9,5 +9,8 @@
 <li>JavaScript</li>
 <li>Bootstrap 4</li>
 <br>
-<p>Future development: ability to add items into the array from dom. Ability to login and save state / items randomized. Ability to split into more than 2 lists</p>
+<h4>future development:</h4>
+<li>user login in</li>
+<li>ability to save randomized lists</li>
+<li>generate lists larger than 2 columns</li>
 <img src="/assets/images/random.gif">

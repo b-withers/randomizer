@@ -2,7 +2,7 @@
 var input = document.getElementById("inputtext");
 //empty array for random items
 var studentsArray = [];
-
+//function to shuffle the array
 function shuffle(array) {
   let students1 = []
   let students2 = []
