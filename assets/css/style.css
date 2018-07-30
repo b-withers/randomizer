@@ -6,8 +6,8 @@
 	background-image: url(../images/dice.gif);
 	background-repeat: no-repeat;
 	background-color: white;
-	background-size: 12%;
-	margin-top: 20px;
+	background-size: 10%;
+	padding-top: 20px;
 	padding: 20px;
 }
 
@@ -25,4 +25,9 @@
 	display: none;
 	font-family: 'Permanent Marker', cursive;
 	color: rgb(235, 0, 0);
+}
+
+.text3{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 8px;
 }
