@@ -1,3 +1,8 @@
+//variable for onkeyup function
+var input = document.getElementById("inputtext");
+//empty array for random items
+var studentsArray = [];
+
 function shuffle(array) {
   let students1 = []
   let students2 = []
@@ -26,11 +31,27 @@ function shuffle(array) {
 document.getElementById("studentsOne").innerHTML = students1;
 document.getElementById("studentsTwo").innerHTML = students2;
 }
-// run the function
 
-//created function to run on button click
+// run the function
 randominze = function () {
 	//input students names into array studentsArray
-var studentsArray = [1,2,3,4,5,6,7,8,9];
 studentsArray = shuffle(studentsArray);
 }
+
+//function to add items to array
+function addRecord() {
+  var inp = document.getElementById('inputtext');
+  studentsArray.push(inp.value);
+	inp.value = "";  
+	console.log(studentsArray);
+	document.getElementById("values").innerHTML = studentsArray.join(",  ");
+}
+
+//click enter to add item function
+input.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("add button-addon2").click();
+  }
+});
+
