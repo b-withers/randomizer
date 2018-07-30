@@ -34,7 +34,8 @@ document.getElementById("studentsTwo").innerHTML = students2;
 
 // run the function
 randominze = function () {
-	//input students names into array studentsArray
+	showDiv();
+		//input students names into array studentsArray
 studentsArray = shuffle(studentsArray);
 }
 
@@ -54,4 +55,10 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("add button-addon2").click();
   }
 });
+
+//show BAM RANDOMIZED on click
+function showDiv() {
+	document.getElementById('text2').style.display = "block";
+}
+
 
